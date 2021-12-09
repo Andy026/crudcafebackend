@@ -4,4 +4,7 @@ import { productoCtrl } from "../controllers/producto.controllers";
 export const router = Router();
 
 //crear rutas
-router.route('/borrarproducto').delete(productoCtrl.borrarProducto)
+router
+  .route("/")
+  .delete(productoCtrl.borrarProducto)
+  .post(productoCtrl.nuevoProducto);
