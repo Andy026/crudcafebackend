@@ -6,5 +6,5 @@ export const router = Router();
 //crear rutas
 router
   .route("/")
-  .delete(productoCtrl.borrarProducto)
+  .get(productoCtrl.listaProductos)
   .post(productoCtrl.nuevoProducto);
