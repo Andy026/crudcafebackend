@@ -8,3 +8,9 @@ router
   .route("/")
   .get(productoCtrl.listaProductos)
   .post(productoCtrl.nuevoProducto);
+
+router
+  .route("/:id")
+  .get(productoCtrl.obtenerProducto)
+  .delete(productoCtrl.borrarProducto)
+  .put(productoCtrl.modificarProducto);
